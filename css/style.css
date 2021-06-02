@@ -11,5 +11,64 @@ html {
 body {
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 1.7;
-  padding: 3rem; }
+  line-height: 1.7; }
+
+.main__text--1 {
+  font-family: "Proza Libre", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  color: #000000; }
+
+.main__text--2 {
+  font-family: "Proza Libre", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.0025em;
+  color: #2e282a; }
+
+.main {
+  position: relative;
+  height: 16rem;
+  background-color: #ecb093;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #eacdc4, #ecb093); }
+  .main__text-box--1 {
+    position: absolute;
+    width: 63%;
+    top: 2.4rem;
+    left: 1.6rem; }
+  .main__text-box--2 {
+    position: absolute;
+    width: 55%;
+    top: 9.2rem;
+    left: 1.6rem; }
+  .main__image {
+    position: absolute;
+    height: 16.3rem;
+    width: 19rem;
+    top: -0.45rem;
+    left: 17rem; }
+
+.header {
+  height: 7.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header__cart__icon {
+  margin-right: 1.7rem;
+  width: 2.4rem;
+  height: 2.4rem; }
+
+.header__button__icon {
+  margin-left: 1.7rem;
+  width: 2.4rem;
+  height: 2.4rem; }
+
+.header__logo__icon {
+  width: 7.7rem;
+  height: 5.6rem; }
