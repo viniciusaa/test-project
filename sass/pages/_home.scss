@@ -1,0 +1,30 @@
+.main {
+
+
+  position: relative;
+  height: 16rem;
+  background-color: #ecb093; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #eacdc4, #ecb093);
+
+  &__text-box--1 {
+    position: absolute;
+    width: 63%;
+    top: 2.4rem;
+    left: 1.6rem;
+  }
+
+  &__text-box--2 {
+    position: absolute;
+    width: 55%;
+    top: 9.2rem;
+    left: 1.6rem;
+  }
+
+  &__image {
+    position: absolute;
+    height: 16.3rem;
+    width: 19rem;
+    top: -0.45rem;
+    left: 17rem;
+  }
+}
