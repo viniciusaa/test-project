@@ -1,0 +1,61 @@
+.product {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 34.4rem;
+  width: 15.6rem;
+
+  &__image {
+    height: 9.6rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.6rem;
+    width: 14rem;
+  }
+
+  &__name {
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    height: 4.8rem;
+    letter-spacing: 0.0025em;
+    line-height: 2.4rem;
+    margin-bottom: 0.4rem;
+    text-transform: capitalize;
+    text-align: center;
+    width: 7.2rem;
+  }
+
+  &__price {
+    color: #7A7677;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.0025em;
+    margin-bottom: 3.2rem;
+    width: 8.9rem;
+  }
+
+  &__amount {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    width: 100%;
+
+    &__number {
+      align-self: flex-end;
+      color: black;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.8rem;
+      height: 2.4rem;
+      line-height: 2.4rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+      width: 0.9rem;
+    }
+  }
+}

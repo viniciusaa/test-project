@@ -1,9 +1,9 @@
 *,
 *::after,
 *::before {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 html {
   font-size: 62.5%; }
@@ -11,86 +11,174 @@ html {
 body {
   font-weight: 400;
   font-size: 1.6rem;
+  font-family: "Proza Libre", sans-serif;
   line-height: 1.7; }
 
 .main-text-1 {
+  color: #000000;
   font-family: "Proza Libre", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2.4rem;
   line-height: 120%;
-  color: #000000; }
+  text-transform: capitalize; }
 
 .main-text-2 {
-  font-family: "Proza Libre", sans-serif;
+  color: #2e282a;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
   line-height: 2.4rem;
-  letter-spacing: 0.0025em;
-  color: #2e282a; }
+  letter-spacing: 0.0025em; }
 
 .shop-text {
-  width: 24.4rem;
-  height: 1.6rem;
-  font-family: "Proza Libre", sans-serif;
+  color: #2e282a;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2rem;
+  height: 1.6rem;
   line-height: 1.6rem;
-  color: #2e282a; }
+  width: 24.4rem; }
+
+.list-title {
+  align-items: center;
+  color: #000000;
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  height: 3.2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.0025em;
+  margin-left: 1.6rem;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+  width: 24.7rem; }
+
+.list-item {
+  margin-bottom: 1.2rem;
+  text-transform: capitalize; }
 
 .main {
-  height: 16rem;
   background: url("../images/apples.png"), linear-gradient(to right, #eacdc4, #ecb093);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
   display: flex;
   flex-direction: column;
+  height: 16rem;
   justify-content: center; }
   .main__text-box--1 {
-    width: 60%;
     margin-bottom: 1rem;
-    margin-left: 1.5rem; }
+    margin-left: 1.5rem;
+    width: 60%; }
   .main__text-box--2 {
-    width: 60%;
-    margin-left: 1.5rem; }
+    margin-left: 1.5rem;
+    width: 60%; }
 
 .shop {
-  height: 12.8rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .shop__button {
-    margin-bottom: 1.6rem;
-    background-color: black;
-    color: white;
-    padding: 1.6rem 3.8rem;
-    border-radius: 72px;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
-    font-size: 1.6rem;
-    font-weight: bold; }
+  height: 12.8rem;
+  justify-content: center; }
+
+.products {
+  display: flex;
+  flex-direction: column;
+  height: 154.8rem; }
+  .products__options {
+    display: flex;
+    justify-content: space-between; }
+  .products__carousel-bar {
+    border: 1px solid #C7C0C2;
+    margin-bottom: 2.4rem; }
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
 
 .header {
-  height: 7.2rem;
+  align-items: center;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  height: 7.2rem;
+  justify-content: space-between; }
 
 .cart-icon {
+  height: 2.4rem;
   margin-right: 1.7rem;
-  width: 2.4rem;
-  height: 2.4rem; }
+  width: 2.4rem; }
 
 .button-icon {
+  height: 2.4rem;
   margin-left: 1.7rem;
-  width: 2.4rem;
-  height: 2.4rem; }
+  width: 2.4rem; }
+
+.shop-button {
+  background-color: black;
+  border: none;
+  border-radius: 72px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: inherit;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem 4.7rem;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 .logo-icon {
-  width: 7.7rem;
-  height: 5.6rem; }
+  height: 5.6rem;
+  width: 7.7rem; }
+
+.product {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 34.4rem;
+  width: 15.6rem; }
+  .product__image {
+    height: 9.6rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.6rem;
+    width: 14rem; }
+  .product__name {
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    height: 4.8rem;
+    letter-spacing: 0.0025em;
+    line-height: 2.4rem;
+    margin-bottom: 0.4rem;
+    text-transform: capitalize;
+    text-align: center;
+    width: 7.2rem; }
+  .product__price {
+    color: #7A7677;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.0025em;
+    margin-bottom: 3.2rem;
+    width: 8.9rem; }
+  .product__amount {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    width: 100%; }
+    .product__amount__number {
+      align-self: flex-end;
+      color: black;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.8rem;
+      height: 2.4rem;
+      line-height: 2.4rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+      width: 0.9rem; }
