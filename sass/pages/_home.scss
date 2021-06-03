@@ -1,28 +1,24 @@
 .main {
-  position: relative;
   height: 16rem;
-  background-color: #ecb093; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right, #eacdc4, #ecb093);
+
+  background: url('../images/apples.png'), linear-gradient(to right, #eacdc4, #ecb093);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__text-box--1 {
-    position: absolute;
-    width: 63%;
-    top: 2.4rem;
-    left: 1.6rem;
+    width: 60%;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+
   }
 
   &__text-box--2 {
-    position: absolute;
-    width: 55%;
-    top: 9.2rem;
-    left: 1.6rem;
-  }
-
-  &__image {
-    position: absolute;
-    height: 16.3rem;
-    width: 19rem;
-    top: -0.45rem;
-    left: 17rem;
+    width: 60%;
+    margin-left: 1.5rem;
   }
 }
