@@ -13,7 +13,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.7; }
 
-.text-1 {
+.main-text-1 {
   font-family: "Proza Libre", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -21,13 +21,23 @@ body {
   line-height: 120%;
   color: #000000; }
 
-.text-2 {
+.main-text-2 {
   font-family: "Proza Libre", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
   line-height: 2.4rem;
   letter-spacing: 0.0025em;
+  color: #2e282a; }
+
+.shop-text {
+  width: 24.4rem;
+  height: 1.6rem;
+  font-family: "Proza Libre", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   color: #2e282a; }
 
 .main {
@@ -46,6 +56,24 @@ body {
   .main__text-box--2 {
     width: 60%;
     margin-left: 1.5rem; }
+
+.shop {
+  height: 12.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .shop__button {
+    margin-bottom: 1.6rem;
+    background-color: black;
+    color: white;
+    padding: 1.6rem 3.8rem;
+    border-radius: 72px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold; }
 
 .header {
   height: 7.2rem;

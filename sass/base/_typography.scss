@@ -1,4 +1,4 @@
-.text-1 {
+.main-text-1 {
   font-family: "Proza Libre", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -7,12 +7,23 @@
   color: #000000;
 }
 
-.text-2 {
+.main-text-2 {
   font-family: "Proza Libre", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
   line-height: 2.4rem;
   letter-spacing: 0.0025em;
+  color: #2e282a;
+}
+
+.shop-text {
+  width: 24.4rem;
+  height: 1.6rem;
+  font-family: "Proza Libre", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   color: #2e282a;
 }
