@@ -1,29 +1,49 @@
 .main-text-1 {
+  color: #000000;
   font-family: "Proza Libre", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2.4rem;
   line-height: 120%;
-  color: #000000;
+  text-transform: capitalize;
 }
 
 .main-text-2 {
-  font-family: "Proza Libre", sans-serif;
+  color: #2e282a;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
   line-height: 2.4rem;
   letter-spacing: 0.0025em;
-  color: #2e282a;
 }
 
 .shop-text {
-  width: 24.4rem;
-  height: 1.6rem;
-  font-family: "Proza Libre", sans-serif;
+  color: #2e282a;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2rem;
+  height: 1.6rem;
   line-height: 1.6rem;
-  color: #2e282a;
+  width: 24.4rem;
+}
+
+.list-title {
+  align-items: center;
+  color: #000000;
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  height: 3.2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.0025em;
+  margin-left: 1.6rem;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+  width: 24.7rem;
+}
+
+.list-item {
+  margin-bottom: 1.2rem;
+  text-transform: capitalize;
 }

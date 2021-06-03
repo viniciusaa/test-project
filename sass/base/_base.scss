@@ -1,9 +1,9 @@
 *,
 *::after,
 *::before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -13,5 +13,6 @@ html {
 body {
   font-weight: 400;
   font-size: 1.6rem;
+  font-family: "Proza Libre", sans-serif;
   line-height: 1.7;
 }
