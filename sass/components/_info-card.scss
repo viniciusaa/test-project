@@ -1,0 +1,29 @@
+.info-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  text-align: center;
+
+  &__icon {
+    height: 6.4rem;
+    margin-bottom: 1.6rem;
+    width: 6.4rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.0025em;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0025em;
+    width: 24rem;
+  }
+}

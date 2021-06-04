@@ -3,4 +3,95 @@
   display: flex;
   height: 7.2rem;
   justify-content: space-between;
+
+  @media only screen and (min-width: 992px) {
+    height: 11.2rem;
+    justify-content: space-around;
+  }
+
+  &__button {
+    height: 2.4rem;
+    margin-left: 1.9rem;
+    width: 2.4rem;
+
+    @media only screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__text-container {
+    display: flex;
+
+    @media only screen and (max-width: 991px) {
+      display: none;
+    }
+
+    &__text-1 {
+      align-items: center;
+      color: black;
+      display: flex;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.4rem;
+      height: 2.4rem;
+      line-height: 1.9rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      width: 7.2rem;  
+    }
+
+    &__text-2 {
+      align-items: center;
+      color: black;
+      display: flex;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.4rem;
+      height: 2.4rem;
+      line-height: 1.9rem;
+      letter-spacing: 0.04em;
+      margin-left: 6.4rem;
+      text-transform: uppercase;
+      width: 7.7rem; 
+    }
+  }
+
+  &__logo {
+    height: 5.6rem;
+    width: 7.7rem;
+
+    @media only screen and (min-width: 992px) {
+      height: 8.8rem;
+      width: 12.1rem;
+      margin-right: 40px;
+    }
+  }
+
+  &__cart {
+    display: flex;
+    margin-right: 1.728rem;
+
+    &__text {
+      align-items: center;
+      display: flex;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.4rem;
+      height: 2.4rem;
+      line-height: 1.9rem;
+      letter-spacing: 0.04em;
+      margin-right: 2.2rem;
+      text-transform: uppercase;
+      width: 8.7rem;
+
+      @media only screen and (max-width: 991px) {
+        display: none;
+      }
+    }
+
+    &__icon {
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+  }
 }
