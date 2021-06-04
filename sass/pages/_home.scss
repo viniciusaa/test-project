@@ -121,7 +121,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 2.4rem;
-  // border:chocolate 1px solid;
 
   @media only screen and (min-width: 992px) {
     width: 100%;
@@ -194,12 +193,18 @@
 }
 
 .info {
-  align-content: space-between;
+  align-content: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   margin-bottom: 6.4rem;
 
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 
-
-  border: 1px solid red;
+.product-types {
+  border: red 1px solid;
 }
