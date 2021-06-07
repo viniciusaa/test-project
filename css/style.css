@@ -25,13 +25,10 @@ body {
 
 .deliver {
   background-color: #2E282A;
-  display: flex;
+  display: none;
   height: 3.2rem;
   justify-content: center;
   align-items: center; }
-  @media only screen and (max-width: 991px) {
-    .deliver {
-      display: none; } }
   .deliver__text {
     color: white;
     font-style: normal;
@@ -52,25 +49,11 @@ body {
   flex-direction: column;
   height: 16rem;
   justify-content: space-around; }
-  @media only screen and (min-width: 992px) {
-    .main {
-      height: 56rem;
-      background: url("../images/apples-big.png"), linear-gradient(to right, #eacdc4, #ecb093);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: right; } }
   .main__text-container {
     margin-left: 1.5rem; }
-    @media only screen and (min-width: 992px) {
-      .main__text-container {
-        margin-left: 16rem; } }
     .main__text-container--1 {
       margin-bottom: 1rem;
       width: 69%; }
-      @media only screen and (min-width: 992px) {
-        .main__text-container--1 {
-          margin-bottom: 2.4rem;
-          width: 40%; } }
       .main__text-container--1__title {
         color: #000000;
         font-style: normal;
@@ -78,14 +61,8 @@ body {
         font-size: 2.4rem;
         line-height: 120%;
         text-transform: capitalize; }
-        @media only screen and (min-width: 992px) {
-          .main__text-container--1__title {
-            font-size: 4.8rem; } }
     .main__text-container--2 {
       width: 66%; }
-      @media only screen and (min-width: 992px) {
-        .main__text-container--2 {
-          width: 100%; } }
       .main__text-container--2__subtitle {
         color: #2e282a;
         font-style: normal;
@@ -93,17 +70,9 @@ body {
         font-size: 1.4rem;
         line-height: 2.4rem;
         letter-spacing: 0.0025em; }
-        @media only screen and (min-width: 992px) {
-          .main__text-container--2__subtitle {
-            font-size: 1.8rem; } }
   .main__shop {
+    display: none;
     margin-left: 1.5rem; }
-    @media only screen and (min-width: 992px) {
-      .main__shop {
-        margin-left: 16rem; } }
-    @media only screen and (max-width: 991px) {
-      .main__shop {
-        display: none; } }
 
 .shop {
   align-items: center;
@@ -111,19 +80,11 @@ body {
   flex-direction: column;
   height: 12.8rem;
   justify-content: center; }
-  @media only screen and (min-width: 992px) {
-    .shop {
-      display: none; } }
 
 .products {
   display: flex;
   flex-direction: column;
   margin-bottom: 2.4rem; }
-  @media only screen and (min-width: 992px) {
-    .products {
-      width: 100%;
-      align-items: center;
-      margin-bottom: 8rem; } }
   .products__title {
     align-items: center;
     color: black;
@@ -138,39 +99,19 @@ body {
     margin-left: 1.6rem;
     text-transform: uppercase;
     width: 24.7rem; }
-    @media only screen and (min-width: 992px) {
-      .products__title {
-        align-self: flex-start;
-        margin-left: 15rem;
-        margin-top: 7.2rem;
-        margin-bottom: 2.4rem; } }
   .products__options {
     display: flex;
     justify-content: space-between; }
-    @media only screen and (min-width: 992px) {
-      .products__options {
-        align-self: flex-start;
-        justify-content: flex-start;
-        margin-left: 15rem; } }
     .products__options__item {
       margin-bottom: 1.2rem;
       text-transform: capitalize; }
-      @media only screen and (min-width: 992px) {
-        .products__options__item {
-          margin-right: 8rem; } }
   .products__carousel-bar {
     border: 1px solid #C7C0C2;
     margin-bottom: 2.4rem; }
-    @media only screen and (min-width: 992px) {
-      .products__carousel-bar {
-        width: 80%; } }
   .products__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
-    @media only screen and (min-width: 992px) {
-      .products__list {
-        width: 85%; } }
 
 .info {
   align-items: center;
@@ -178,10 +119,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 6.4rem; }
-  @media only screen and (min-width: 992px) {
-    .info {
-      flex-direction: row;
-      justify-content: center; } }
 
 .product-types {
   align-items: center;
@@ -194,14 +131,6 @@ body {
     background-position: bottom;
     height: 44rem;
     max-width: 49rem; }
-    @media only screen and (min-width: 992px) {
-      .product-types__fruit {
-        background: url("../images/blueberry-big.png"), linear-gradient(to bottom, #c4deea, #aecfdb);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left;
-        max-width: none;
-        width: 100%; } }
     .product-types__fruit__description {
       display: flex;
       flex-direction: column;
@@ -214,11 +143,6 @@ body {
         margin-bottom: 2.4rem;
         margin-top: 6.4rem;
         text-align: center; }
-        @media only screen and (min-width: 992px) {
-          .product-types__fruit__description__name {
-            margin-left: 71rem;
-            margin-top: 14.4rem;
-            text-align: left; } }
       .product-types__fruit__description__about {
         color: #2E282A;
         font-weight: bold;
@@ -226,11 +150,6 @@ body {
         line-height: 24px;
         letter-spacing: 0.0025em;
         text-align: center; }
-        @media only screen and (min-width: 992px) {
-          .product-types__fruit__description__about {
-            width: 33%;
-            margin-left: 71rem;
-            text-align: left; } }
   .product-types__vegetables {
     background: url("../images/pea.png"), linear-gradient(to bottom, #f8fce4, #e2ebcf);
     background-repeat: no-repeat;
@@ -238,14 +157,6 @@ body {
     background-position: bottom;
     height: 44rem;
     max-width: 49rem; }
-    @media only screen and (min-width: 992px) {
-      .product-types__vegetables {
-        background: url("../images/pea-big.png"), linear-gradient(to bottom, #f8fce4, #e2ebcf);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: right;
-        max-width: none;
-        width: 100%; } }
     .product-types__vegetables__description {
       display: flex;
       flex-direction: column;
@@ -258,11 +169,6 @@ body {
         margin-bottom: 2.4rem;
         margin-top: 6.4rem;
         text-align: center; }
-        @media only screen and (min-width: 992px) {
-          .product-types__vegetables__description__name {
-            margin-left: 10%;
-            margin-top: 14.4rem;
-            text-align: left; } }
       .product-types__vegetables__description__about {
         color: #2E282A;
         font-weight: bold;
@@ -270,11 +176,6 @@ body {
         line-height: 24px;
         letter-spacing: 0.0025em;
         text-align: center; }
-        @media only screen and (min-width: 992px) {
-          .product-types__vegetables__description__about {
-            margin-left: 10%;
-            text-align: left;
-            width: 40%; } }
   .product-types__dairy {
     background: url("../images/cheese.png"), linear-gradient(to bottom, #fbedc8, #f8d9a1);
     background-repeat: no-repeat;
@@ -282,14 +183,6 @@ body {
     background-position: bottom;
     height: 44rem;
     max-width: 49rem; }
-    @media only screen and (min-width: 992px) {
-      .product-types__dairy {
-        background: url("../images/cheese-big.png"), linear-gradient(to bottom, #fbedc8, #f8d9a1);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left;
-        max-width: none;
-        width: 100%; } }
     .product-types__dairy__description {
       display: flex;
       flex-direction: column;
@@ -302,11 +195,6 @@ body {
         margin-bottom: 2.4rem;
         margin-top: 6.4rem;
         text-align: center; }
-        @media only screen and (min-width: 992px) {
-          .product-types__dairy__description__name {
-            margin-left: 71rem;
-            margin-top: 14.4rem;
-            text-align: left; } }
       .product-types__dairy__description__about {
         color: #2E282A;
         font-weight: bold;
@@ -314,73 +202,146 @@ body {
         line-height: 24px;
         letter-spacing: 0.0025em;
         text-align: center; }
-        @media only screen and (min-width: 992px) {
-          .product-types__dairy__description__about {
-            width: 33%;
-            margin-left: 71rem;
-            text-align: left; } }
 
 .about {
   display: flex;
   flex-direction: column;
   height: 106.6rem;
   width: 35rem; }
-  @media only screen and (min-width: 992px) {
-    .about {
-      height: 49.6rem;
-      width: 100%; } }
   .about__title {
     font-weight: bold;
     font-size: 2.4rem;
     line-height: 120%;
     margin-top: 5.6rem; }
-    @media only screen and (min-width: 992px) {
-      .about__title {
-        font-size: 4rem;
-        margin-left: 10rem; } }
   .about__text {
     color: #2E282A;
     font-size: 1.8rem;
     line-height: 2.5rem;
     margin-top: 3.2rem; }
-    @media only screen and (min-width: 992px) {
-      .about__text {
-        display: flex;
-        font-size: 1.4rem; } }
     .about__text__paragraph-1 {
       margin-bottom: 3.2rem; }
-      @media only screen and (min-width: 992px) {
-        .about__text__paragraph-1 {
-          margin-bottom: 0;
-          margin-right: 3.2rem;
-          margin-left: 10rem; } }
     .about__text__paragraph-2 {
       margin-bottom: 6.4rem; }
-      @media only screen and (min-width: 992px) {
-        .about__text__paragraph-2 {
-          margin-right: 10rem; } }
+
+@media only screen and (min-width: 992px) {
+  .deliver {
+    display: flex; }
+  .main {
+    height: 56rem;
+    background: url("../images/apples-big.png"), linear-gradient(to right, #eacdc4, #ecb093);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right; }
+    .main__text-container {
+      margin-left: 16rem; }
+      .main__text-container--1 {
+        margin-bottom: 2.4rem;
+        width: 40%; }
+        .main__text-container--1__title {
+          font-size: 4.8rem; }
+      .main__text-container--2 {
+        width: 100%; }
+        .main__text-container--2__subtitle {
+          font-size: 1.8rem; }
+    .main__shop {
+      display: block;
+      margin-left: 16rem; }
+  .shop {
+    display: none; }
+  .products {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 8rem; }
+    .products__title {
+      align-self: flex-start;
+      margin-left: 15rem;
+      margin-top: 7.2rem;
+      margin-bottom: 2.4rem; }
+    .products__options {
+      align-self: flex-start;
+      justify-content: flex-start;
+      margin-left: 15rem; }
+      .products__options__item {
+        margin-right: 8rem; }
+    .products__carousel-bar {
+      width: 80%; }
+    .products__list {
+      width: 85%; }
+  .info {
+    flex-direction: row;
+    justify-content: center; }
+  .product-types__fruit {
+    background: url("../images/blueberry-big.png"), linear-gradient(to bottom, #c4deea, #aecfdb);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    max-width: none;
+    width: 100%; }
+    .product-types__fruit__description__name {
+      margin-left: 71rem;
+      margin-top: 14.4rem;
+      text-align: left; }
+    .product-types__fruit__description__about {
+      width: 33%;
+      margin-left: 71rem;
+      text-align: left; }
+  .product-types__vegetables {
+    background: url("../images/pea-big.png"), linear-gradient(to bottom, #f8fce4, #e2ebcf);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    max-width: none;
+    width: 100%; }
+    .product-types__vegetables__description__name {
+      margin-left: 10%;
+      margin-top: 14.4rem;
+      text-align: left; }
+    .product-types__vegetables__description__about {
+      margin-left: 10%;
+      text-align: left;
+      width: 40%; }
+  .product-types__dairy {
+    background: url("../images/cheese-big.png"), linear-gradient(to bottom, #fbedc8, #f8d9a1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    max-width: none;
+    width: 100%; }
+    .product-types__dairy__description__name {
+      margin-left: 71rem;
+      margin-top: 14.4rem;
+      text-align: left; }
+    .product-types__dairy__description__about {
+      width: 33%;
+      margin-left: 71rem;
+      text-align: left; }
+  .about {
+    height: 49.6rem;
+    width: 100%; }
+    .about__title {
+      font-size: 4rem;
+      margin-left: 10rem; }
+    .about__text {
+      display: flex;
+      font-size: 1.4rem; }
+      .about__text__paragraph-1 {
+        margin-bottom: 0;
+        margin-right: 3.2rem;
+        margin-left: 10rem; }
+      .about__text__paragraph-2 {
+        margin-right: 10rem; } }
 
 .header {
   align-items: center;
   display: flex;
   height: 7.2rem;
   justify-content: space-between; }
-  @media only screen and (min-width: 992px) {
-    .header {
-      height: 11.2rem;
-      justify-content: space-around; } }
   .header__button {
     height: 2.4rem;
     margin-left: 1.9rem;
     width: 2.4rem; }
-    @media only screen and (min-width: 992px) {
-      .header__button {
-        display: none; } }
   .header__text-container {
-    display: flex; }
-    @media only screen and (max-width: 991px) {
-      .header__text-container {
-        display: none; } }
+    display: none; }
     .header__text-container__text-1 {
       align-items: center;
       color: black;
@@ -409,17 +370,12 @@ body {
   .header__logo {
     height: 5.6rem;
     width: 7.7rem; }
-    @media only screen and (min-width: 992px) {
-      .header__logo {
-        height: 8.8rem;
-        width: 12.1rem;
-        margin-right: 40px; } }
   .header__cart {
     display: flex;
     margin-right: 1.728rem; }
     .header__cart__text {
       align-items: center;
-      display: flex;
+      display: none;
       font-style: normal;
       font-weight: 500;
       font-size: 1.4rem;
@@ -429,12 +385,24 @@ body {
       margin-right: 2.2rem;
       text-transform: uppercase;
       width: 8.7rem; }
-      @media only screen and (max-width: 991px) {
-        .header__cart__text {
-          display: none; } }
     .header__cart__icon {
       height: 2.4rem;
       width: 2.4rem; }
+
+@media only screen and (min-width: 992px) {
+  .header {
+    height: 11.2rem;
+    justify-content: space-around; }
+    .header__button {
+      display: none; }
+    .header__text-container {
+      display: flex; }
+    .header__logo {
+      height: 8.8rem;
+      width: 12.1rem;
+      margin-right: 40px; }
+    .header__cart__text {
+      display: flex; } }
 
 .footer {
   align-items: center;
@@ -449,10 +417,11 @@ body {
   line-height: 19px;
   letter-spacing: 0.04em;
   text-transform: uppercase; }
-  @media only screen and (min-width: 992px) {
-    .footer {
-      height: 16.8rem;
-      flex-direction: row; } }
+
+@media only screen and (min-width: 992px) {
+  .footer {
+    height: 16.8rem;
+    flex-direction: row; } }
 
 .shop-button {
   background-color: black;
@@ -474,19 +443,11 @@ body {
   flex-direction: column;
   height: 34.4rem;
   width: 15.6rem; }
-  @media only screen and (min-width: 992px) {
-    .product {
-      height: 40rem;
-      width: 25.6rem; } }
   .product__image {
     height: 9.6rem;
     margin-top: 0.8rem;
     margin-bottom: 1.6rem;
     width: 14rem; }
-    @media only screen and (min-width: 992px) {
-      .product__image {
-        height: 16rem;
-        width: 22.4rem; } }
   .product__name {
     color: black;
     font-style: normal;
@@ -499,10 +460,6 @@ body {
     text-transform: capitalize;
     text-align: center;
     width: 7.2rem; }
-    @media only screen and (min-width: 992px) {
-      .product__name {
-        height: 2.4rem;
-        width: 80%; } }
   .product__price {
     color: #7A7677;
     font-style: normal;
@@ -531,28 +488,27 @@ body {
       margin-left: 2rem;
       width: 0.9rem; }
 
+@media only screen and (min-width: 992px) {
+  .product {
+    height: 40rem;
+    width: 25.6rem; }
+    .product__image {
+      height: 16rem;
+      width: 22.4rem; }
+    .product__name {
+      height: 2.4rem;
+      width: 80%; } }
+
 .info-card {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-top: 4rem;
   text-align: center; }
-  @media only screen and (min-width: 992px) {
-    .info-card {
-      align-items: flex-start;
-      flex-direction: row;
-      margin-right: 5.6rem;
-      text-align: left; } }
   .info-card__icon {
     height: 6.4rem;
     margin-bottom: 1.6rem;
     width: 6.4rem; }
-    @media only screen and (min-width: 992px) {
-      .info-card__icon {
-        margin-right: 1.5rem; } }
-  @media only screen and (min-width: 992px) {
-    .info-card__description {
-      align-self: flex-end; } }
   .info-card__description__title {
     font-weight: bold;
     font-size: 1.8rem;
@@ -565,3 +521,14 @@ body {
     line-height: 24px;
     letter-spacing: 0.0025em;
     width: 24rem; }
+
+@media only screen and (min-width: 992px) {
+  .info-card {
+    align-items: flex-start;
+    flex-direction: row;
+    margin-right: 5.6rem;
+    text-align: left; }
+    .info-card__icon {
+      margin-right: 1.5rem; }
+    .info-card__description {
+      align-self: flex-end; } }

@@ -1,13 +1,9 @@
 .deliver {
   background-color: #2E282A;
-  display: flex;
+  display: none;
   height: 3.2rem;
   justify-content: center;
   align-items: center;
-
-  @media only screen and (max-width: 991px) {
-    display: none;
-  }
 
   &__text {
     color: white;
@@ -32,29 +28,12 @@
   height: 16rem;
   justify-content: space-around;
 
-  @media only screen and (min-width: 992px) {
-    height: 56rem;
-    background: url("../images/apples-big.png"), linear-gradient(to right, #eacdc4, #ecb093);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-  }
-
   &__text-container {
     margin-left: 1.5rem;
-
-    @media only screen and (min-width: 992px) {
-      margin-left: 16rem;
-    }
 
     &--1 {
       margin-bottom: 1rem;
       width: 69%;
-
-      @media only screen and (min-width: 992px) {
-        margin-bottom: 2.4rem;
-        width: 40%;
-      }
 
       &__title {
         color: #000000;
@@ -63,19 +42,11 @@
         font-size: 2.4rem;
         line-height: 120%;
         text-transform: capitalize;
-
-        @media only screen and (min-width: 992px) {
-          font-size: 4.8rem;
-        }
       }
     }
 
     &--2 {
       width: 66%;
-
-      @media only screen and (min-width: 992px) {
-        width: 100%;
-      }
 
       &__subtitle {
         color: #2e282a;
@@ -84,24 +55,13 @@
         font-size: 1.4rem;
         line-height: 2.4rem;
         letter-spacing: 0.0025em;
-
-        @media only screen and (min-width: 992px) {
-          font-size: 1.8rem;
-        }
       }
     }
   }
 
   &__shop {
+    display: none;
     margin-left: 1.5rem;
-
-    @media only screen and (min-width: 992px) {
-      margin-left: 16rem;
-    }
-
-    @media only screen and (max-width: 991px) {
-      display: none;
-    }
   }
 }
 
@@ -111,22 +71,12 @@
   flex-direction: column;
   height: 12.8rem;
   justify-content: center;
-
-  @media only screen and (min-width: 992px) {
-    display: none;
-  }
 }
 
 .products {
   display: flex;
   flex-direction: column;
   margin-bottom: 2.4rem;
-
-  @media only screen and (min-width: 992px) {
-    width: 100%;
-    align-items: center;
-    margin-bottom: 8rem;
-  }
 
   &__title {
     align-items: center;
@@ -142,53 +92,27 @@
     margin-left: 1.6rem;
     text-transform: uppercase;
     width: 24.7rem;
-
-    @media only screen and (min-width: 992px) {
-      align-self: flex-start;
-      margin-left: 15rem;
-      margin-top: 7.2rem;
-      margin-bottom: 2.4rem;
-    }
-
   }
 
   &__options {
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (min-width: 992px) {
-      align-self: flex-start;
-      justify-content: flex-start;
-      margin-left: 15rem;
-    }
-
     &__item {
       margin-bottom: 1.2rem;
       text-transform: capitalize;
-
-      @media only screen and (min-width: 992px) {
-        margin-right: 8rem;
-      }
     }
   }
 
   &__carousel-bar {
     border: 1px solid #C7C0C2;
     margin-bottom: 2.4rem;
-
-    @media only screen and (min-width: 992px) {
-      width: 80%;
-    }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
-    @media only screen and (min-width: 992px) {
-      width: 85%;
-    }
   }
 }
 
@@ -198,11 +122,6 @@
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 6.4rem;
-
-  @media only screen and (min-width: 992px) {
-    flex-direction: row;
-    justify-content: center;
-  }
 }
 
 .product-types {
@@ -218,15 +137,6 @@
     height: 44rem;
     max-width: 49rem;
 
-    @media only screen and (min-width: 992px) {
-      background: url("../images/blueberry-big.png"), linear-gradient(to bottom, #c4deea, #aecfdb);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: left;
-      max-width: none;
-      width: 100%;
-    }
-
     &__description {
       display: flex;
       flex-direction: column;
@@ -240,12 +150,6 @@
         margin-bottom: 2.4rem;
         margin-top: 6.4rem;
         text-align: center;
-
-        @media only screen and (min-width: 992px) {
-          margin-left: 71rem;
-          margin-top: 14.4rem;
-          text-align: left;
-        }
       }
 
       &__about {
@@ -255,12 +159,6 @@
         line-height: 24px;
         letter-spacing: 0.0025em;
         text-align: center;
-
-        @media only screen and (min-width: 992px) {
-          width: 33%;
-          margin-left: 71rem;
-          text-align: left;
-        }
       }
     }
   }
@@ -273,15 +171,6 @@
     height: 44rem;
     max-width: 49rem;
 
-    @media only screen and (min-width: 992px) {
-      background: url("../images/pea-big.png"), linear-gradient(to bottom, #f8fce4, #e2ebcf);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: right;
-      max-width: none;
-      width: 100%;
-    }
-
     &__description {
       display: flex;
       flex-direction: column;
@@ -295,12 +184,6 @@
         margin-bottom: 2.4rem;
         margin-top: 6.4rem;
         text-align: center;
-
-        @media only screen and (min-width: 992px) {
-          margin-left: 10%;
-          margin-top: 14.4rem;
-          text-align: left;
-        }
       }
 
       &__about {
@@ -310,12 +193,6 @@
         line-height: 24px;
         letter-spacing: 0.0025em;
         text-align: center;
-
-        @media only screen and (min-width: 992px) {
-          margin-left: 10%;
-          text-align: left;
-          width: 40%;
-        }
       }
     }
   }
@@ -328,15 +205,6 @@
     height: 44rem;
     max-width: 49rem;
 
-    @media only screen and (min-width: 992px) {
-      background: url("../images/cheese-big.png"), linear-gradient(to bottom, #fbedc8, #f8d9a1);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: left;
-      max-width: none;
-      width: 100%;
-    }
-
     &__description {
       display: flex;
       flex-direction: column;
@@ -350,12 +218,6 @@
         margin-bottom: 2.4rem;
         margin-top: 6.4rem;
         text-align: center;
-
-        @media only screen and (min-width: 992px) {
-          margin-left: 71rem;
-          margin-top: 14.4rem;
-          text-align: left;
-        }
       }
 
       &__about {
@@ -365,12 +227,6 @@
         line-height: 24px;
         letter-spacing: 0.0025em;
         text-align: center;
-
-        @media only screen and (min-width: 992px) {
-          width: 33%;
-          margin-left: 71rem;
-          text-align: left;
-        }
       }
     }
   }
@@ -382,21 +238,11 @@
   height: 106.6rem;
   width: 35rem;
 
-  @media only screen and (min-width: 992px) {
-    height: 49.6rem;
-    width: 100%;
-  }
-
   &__title {
     font-weight: bold;
     font-size: 2.4rem;
     line-height: 120%;
     margin-top: 5.6rem;
-
-    @media only screen and (min-width: 992px) {
-      font-size: 4rem;
-      margin-left: 10rem;
-    }
   }
 
   &__text {
@@ -405,25 +251,186 @@
     line-height: 2.5rem;
     margin-top: 3.2rem;
 
-    @media only screen and (min-width: 992px) {
-      display: flex;
-      font-size: 1.4rem;
-    }
-
     &__paragraph-1 {
       margin-bottom: 3.2rem;
-
-      @media only screen and (min-width: 992px) {
-        margin-bottom: 0;
-        margin-right: 3.2rem;
-        margin-left: 10rem;
-      }
     }
 
     &__paragraph-2 {
       margin-bottom: 6.4rem;
+    }
+  }
+}
 
-      @media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
+  .deliver {
+    display: flex;
+  }
+
+  .main {
+    height: 56rem;
+    background: url("../images/apples-big.png"), linear-gradient(to right, #eacdc4, #ecb093);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    &__text-container {
+      margin-left: 16rem;
+
+      &--1 {
+        margin-bottom: 2.4rem;
+        width: 40%;
+
+        &__title {
+          font-size: 4.8rem;
+        }
+      }
+
+      &--2 {
+        width: 100%;
+
+        &__subtitle {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__shop {
+      display: block;
+      margin-left: 16rem;
+    }
+  }
+
+  .shop {
+    display: none;
+  }
+
+  .products {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 8rem;
+
+    &__title {
+      align-self: flex-start;
+      margin-left: 15rem;
+      margin-top: 7.2rem;
+      margin-bottom: 2.4rem;
+    }
+
+    &__options {
+      align-self: flex-start;
+      justify-content: flex-start;
+      margin-left: 15rem;
+
+      &__item {
+        margin-right: 8rem;
+      }
+    }
+
+    &__carousel-bar {
+      width: 80%;
+    }
+
+    &__list {
+      width: 85%;
+    }
+  }
+
+  .info {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .product-types {
+    &__fruit {
+      background: url("../images/blueberry-big.png"), linear-gradient(to bottom, #c4deea, #aecfdb);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left;
+      max-width: none;
+      width: 100%;
+
+      &__description {
+        &__name {
+          margin-left: 71rem;
+          margin-top: 14.4rem;
+          text-align: left;
+        }
+
+        &__about {
+          width: 33%;
+          margin-left: 71rem;
+          text-align: left;
+        }
+      }
+    }
+
+    &__vegetables {
+      background: url("../images/pea-big.png"), linear-gradient(to bottom, #f8fce4, #e2ebcf);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+      max-width: none;
+      width: 100%;
+
+      &__description {
+        &__name {
+          margin-left: 10%;
+          margin-top: 14.4rem;
+          text-align: left;
+        }
+
+        &__about {
+          margin-left: 10%;
+          text-align: left;
+          width: 40%;
+        }
+      }
+    }
+
+    &__dairy {
+      background: url("../images/cheese-big.png"), linear-gradient(to bottom, #fbedc8, #f8d9a1);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left;
+      max-width: none;
+      width: 100%;
+
+      &__description {
+        &__name {
+          margin-left: 71rem;
+          margin-top: 14.4rem;
+          text-align: left;
+        }
+
+        &__about {
+          width: 33%;
+          margin-left: 71rem;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .about {
+    height: 49.6rem;
+    width: 100%;
+
+    &__title {
+      font-size: 4rem;
+      margin-left: 10rem;
+    }
+
+    &__text {
+      display: flex;
+      font-size: 1.4rem;
+
+      &__paragraph-1 {
+        margin-bottom: 0;
+        margin-right: 3.2rem;
+        margin-left: 10rem;
+      }
+
+      &__paragraph-2 {
         margin-right: 10rem;
       }
     }
