@@ -48,6 +48,14 @@
     margin-bottom: 1.2rem;
     width: 100%;
 
+    &__decrease {
+      cursor: pointer;
+    }
+
+    &__increase {
+      cursor: pointer;
+    }
+
     &__number {
       align-self: flex-end;
       color: black;

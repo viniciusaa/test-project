@@ -336,6 +336,7 @@ body {
     display: none; }
     .header__text-container__text-1 {
       align-items: center;
+      cursor: pointer;
       color: black;
       display: flex;
       font-style: normal;
@@ -348,6 +349,7 @@ body {
       width: 7.2rem; }
     .header__text-container__text-2 {
       align-items: center;
+      cursor: pointer;
       color: black;
       display: flex;
       font-style: normal;
@@ -363,6 +365,7 @@ body {
     height: 5.6rem;
     width: 7.7rem; }
   .header__cart {
+    cursor: pointer;
     display: flex;
     padding: 1.728rem; }
     .header__cart__text {
@@ -471,6 +474,10 @@ body {
     justify-content: center;
     margin-bottom: 1.2rem;
     width: 100%; }
+    .product__amount__decrease {
+      cursor: pointer; }
+    .product__amount__increase {
+      cursor: pointer; }
     .product__amount__number {
       align-self: flex-end;
       color: black;

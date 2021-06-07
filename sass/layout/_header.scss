@@ -15,6 +15,7 @@
 
     &__text-1 {
       align-items: center;
+      cursor: pointer;
       color: black;
       display: flex;
       font-style: normal;
@@ -29,6 +30,7 @@
 
     &__text-2 {
       align-items: center;
+      cursor: pointer;
       color: black;
       display: flex;
       font-style: normal;
@@ -49,6 +51,7 @@
   }
 
   &__cart {
+    cursor: pointer;
     display: flex;
     padding: 1.728rem;
 
