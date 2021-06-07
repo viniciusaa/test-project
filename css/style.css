@@ -323,10 +323,11 @@ body {
 .about {
   display: flex;
   flex-direction: column;
-  height: 49.6rem;
+  height: 106.6rem;
   width: 35rem; }
   @media only screen and (min-width: 992px) {
     .about {
+      height: 49.6rem;
       width: 100%; } }
   .about__title {
     font-weight: bold;
@@ -346,10 +347,13 @@ body {
       .about__text {
         display: flex;
         font-size: 1.4rem; } }
-    @media only screen and (min-width: 992px) {
-      .about__text__paragraph-1 {
-        margin-right: 3.2rem;
-        margin-left: 10rem; } }
+    .about__text__paragraph-1 {
+      margin-bottom: 3.2rem; }
+      @media only screen and (min-width: 992px) {
+        .about__text__paragraph-1 {
+          margin-bottom: 0;
+          margin-right: 3.2rem;
+          margin-left: 10rem; } }
     .about__text__paragraph-2 {
       margin-bottom: 6.4rem; }
       @media only screen and (min-width: 992px) {
@@ -431,6 +435,24 @@ body {
     .header__cart__icon {
       height: 2.4rem;
       width: 2.4rem; }
+
+.footer {
+  align-items: center;
+  background-color: #2E282A;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  height: 28rem;
+  justify-content: space-around;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 992px) {
+    .footer {
+      height: 16.8rem;
+      flex-direction: row; } }
 
 .shop-button {
   background-color: black;

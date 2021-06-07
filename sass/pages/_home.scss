@@ -379,10 +379,11 @@
 .about {
   display: flex;
   flex-direction: column;
-  height: 49.6rem;
+  height: 106.6rem;
   width: 35rem;
 
   @media only screen and (min-width: 992px) {
+    height: 49.6rem;
     width: 100%;
   }
 
@@ -410,8 +411,10 @@
     }
 
     &__paragraph-1 {
+      margin-bottom: 3.2rem;
 
       @media only screen and (min-width: 992px) {
+        margin-bottom: 0;
         margin-right: 3.2rem;
         margin-left: 10rem;
       }
