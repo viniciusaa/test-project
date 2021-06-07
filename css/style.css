@@ -111,7 +111,7 @@ body {
   .products__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; }
+    justify-content: flex-start; }
 
 .info {
   align-items: center;
@@ -434,6 +434,7 @@ body {
 .product {
   align-items: center;
   background-color: white;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   height: 34.4rem;
