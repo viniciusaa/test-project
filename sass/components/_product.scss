@@ -1,8 +1,10 @@
 .product {
   align-items: center;
+  background-color: white;
   display: flex;
   flex-direction: column;
   height: 34.4rem;
+  margin: 1rem 1rem;
   width: 15.6rem;
 
   &__image {
