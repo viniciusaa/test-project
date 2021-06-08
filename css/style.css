@@ -323,9 +323,7 @@ body {
   height: 7.2rem;
   justify-content: space-between; }
   .header__button {
-    height: 2.4rem;
-    padding: 0.3rem;
-    width: 2.4rem; }
+    padding-left: 1.9rem; }
   .header__text-container {
     display: none; }
     .header__text-container__text-1 {
