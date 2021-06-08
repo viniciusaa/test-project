@@ -81,36 +81,42 @@ body {
   justify-content: center; }
 
 .products {
+  background-color: #f4f7f4;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2.4rem; }
-  .products__title {
-    align-items: center;
-    color: black;
-    display: flex;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.8rem;
-    height: 3.2rem;
-    line-height: 2.4rem;
-    letter-spacing: 0.0025em;
-    margin-bottom: 1.6rem;
-    margin-left: 1.6rem;
-    text-transform: uppercase;
-    width: 24.7rem; }
-  .products__options {
-    display: flex;
-    justify-content: space-between; }
-    .products__options__item {
+  margin-bottom: 2.4rem;
+  padding-top: 3rem; }
+  .products__carousel {
+    overflow: hidden;
+    padding: 1.6rem; }
+    .products__carousel__name {
+      color: black;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.8rem;
+      height: 3.2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.0025em;
+      margin-bottom: 1.6rem;
+      text-transform: uppercase; }
+    .products__carousel__options {
+      display: flex;
+      justify-content: flex-start;
       margin-bottom: 1.2rem;
-      text-transform: capitalize; }
-  .products__carousel-bar {
-    border: 1px solid #C7C0C2;
-    margin-bottom: 2.4rem; }
+      min-width: 50rem; }
+      .products__carousel__options__item {
+        text-transform: capitalize; }
+        .products__carousel__options__item:not(:last-child) {
+          margin-right: 4rem; }
+    .products__carousel__scrollbar {
+      border: 1px solid #C7C0C2;
+      min-width: 50rem; }
   .products__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; }
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+    padding: 0.4rem; }
 
 .info {
   align-items: center;
@@ -241,28 +247,15 @@ body {
       margin-left: 16rem; }
   .shop {
     display: none; }
-  .products {
-    width: 100%;
-    align-items: center;
-    margin-bottom: 8rem; }
-    .products__title {
-      align-self: flex-start;
-      margin-left: 15rem;
-      margin-top: 7.2rem;
-      margin-bottom: 2.4rem; }
-    .products__options {
-      align-self: flex-start;
-      justify-content: flex-start;
-      margin-left: 15rem; }
-      .products__options__item {
-        margin-right: 8rem; }
-    .products__carousel-bar {
-      width: 80%; }
-    .products__list {
-      width: 85%; }
+  .products__carousel {
+    padding: 3rem 14rem 0 14rem; }
+    .products__carousel__options__item:not(:last-child) {
+      margin-right: 8rem; }
+  .products__list {
+    padding: 3rem 13rem; }
   .info {
     flex-direction: row;
-    justify-content: center; }
+    padding: 0 6rem; }
   .product-types__fruit {
     background: url("../images/blueberry-big.png"), linear-gradient(to bottom, #c4deea, #aecfdb);
     background-repeat: no-repeat;
@@ -312,12 +305,10 @@ body {
     align-items: flex-start; }
     .about__title {
       font-size: 4rem;
-      margin-left: 10rem;
-      width: 100%; }
+      margin-left: 10rem; }
     .about__text {
       display: flex;
-      font-size: 1.4rem;
-      width: 100%; }
+      font-size: 1.4rem; }
       .about__text__paragraph-1 {
         margin-bottom: 8rem;
         margin-right: 3.2rem;
@@ -332,13 +323,12 @@ body {
   height: 7.2rem;
   justify-content: space-between; }
   .header__button {
-    height: 2.4rem;
-    margin-left: 1.9rem;
-    width: 2.4rem; }
+    padding-left: 1.9rem; }
   .header__text-container {
     display: none; }
     .header__text-container__text-1 {
       align-items: center;
+      cursor: pointer;
       color: black;
       display: flex;
       font-style: normal;
@@ -351,6 +341,7 @@ body {
       width: 7.2rem; }
     .header__text-container__text-2 {
       align-items: center;
+      cursor: pointer;
       color: black;
       display: flex;
       font-style: normal;
@@ -366,8 +357,9 @@ body {
     height: 5.6rem;
     width: 7.7rem; }
   .header__cart {
+    cursor: pointer;
     display: flex;
-    margin-right: 1.728rem; }
+    padding: 1.728rem; }
     .header__cart__text {
       align-items: center;
       display: none;
@@ -434,9 +426,12 @@ body {
 
 .product {
   align-items: center;
+  background-color: white;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   height: 34.4rem;
+  margin: 1rem 1rem;
   width: 15.6rem; }
   .product__image {
     height: 9.6rem;
@@ -471,6 +466,10 @@ body {
     justify-content: center;
     margin-bottom: 1.2rem;
     width: 100%; }
+    .product__amount__decrease {
+      cursor: pointer; }
+    .product__amount__increase {
+      cursor: pointer; }
     .product__amount__number {
       align-self: flex-end;
       color: black;
@@ -515,7 +514,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.0025em;
-    width: 24rem; }
+    max-width: 24rem; }
 
 @media only screen and (min-width: 992px) {
   .info-card {

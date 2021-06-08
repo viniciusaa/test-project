@@ -5,9 +5,7 @@
   justify-content: space-between;
 
   &__button {
-    height: 2.4rem;
-    margin-left: 1.9rem;
-    width: 2.4rem;
+    padding-left: 1.9rem;
   }
 
   &__text-container {
@@ -15,6 +13,7 @@
 
     &__text-1 {
       align-items: center;
+      cursor: pointer;
       color: black;
       display: flex;
       font-style: normal;
@@ -29,6 +28,7 @@
 
     &__text-2 {
       align-items: center;
+      cursor: pointer;
       color: black;
       display: flex;
       font-style: normal;
@@ -49,8 +49,9 @@
   }
 
   &__cart {
+    cursor: pointer;
     display: flex;
-    margin-right: 1.728rem;
+    padding: 1.728rem;
 
     &__text {
       align-items: center;

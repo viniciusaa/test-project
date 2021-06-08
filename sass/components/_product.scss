@@ -1,8 +1,11 @@
 .product {
   align-items: center;
+  background-color: white;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   height: 34.4rem;
+  margin: 1rem 1rem;
   width: 15.6rem;
 
   &__image {
@@ -44,6 +47,14 @@
     justify-content: center;
     margin-bottom: 1.2rem;
     width: 100%;
+
+    &__decrease {
+      cursor: pointer;
+    }
+
+    &__increase {
+      cursor: pointer;
+    }
 
     &__number {
       align-self: flex-end;
