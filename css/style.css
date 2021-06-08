@@ -88,7 +88,8 @@ body {
   padding-top: 3rem; }
   .products__carousel {
     overflow: hidden;
-    padding: 1.6rem; }
+    padding: 1.6rem;
+    position: relative; }
     .products__carousel__name {
       color: black;
       font-style: normal;
@@ -109,6 +110,12 @@ body {
         .products__carousel__options__item:not(:last-child) {
           margin-right: 4rem; }
     .products__carousel__scrollbar {
+      border: 2px solid black;
+      position: absolute;
+      top: 10.1rem;
+      left: 1.5rem;
+      width: 10rem; }
+    .products__carousel__scroll {
       border: 1px solid #C7C0C2;
       min-width: 50rem; }
   .products__list {
@@ -251,6 +258,9 @@ body {
     padding: 3rem 14rem 0 14rem; }
     .products__carousel__options__item:not(:last-child) {
       margin-right: 8rem; }
+    .products__carousel__scrollbar {
+      top: 11.5rem;
+      left: 13.7rem; }
   .products__list {
     padding: 3rem 11.5rem; }
   .info {
