@@ -252,7 +252,7 @@ body {
     .products__carousel__options__item:not(:last-child) {
       margin-right: 8rem; }
   .products__list {
-    padding: 3rem 13rem; }
+    padding: 3rem 11.5rem; }
   .info {
     flex-direction: row;
     padding: 0 6rem; }
@@ -431,7 +431,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 34.4rem;
-  margin: 1rem 1rem;
+  margin: 1.6rem 1.6rem;
   width: 15.6rem; }
   .product__image {
     height: 9.6rem;
@@ -485,6 +485,7 @@ body {
 @media only screen and (min-width: 992px) {
   .product {
     height: 40rem;
+    margin: 1.2rem 2rem;
     width: 25.6rem; }
     .product__image {
       height: 16rem;
