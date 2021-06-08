@@ -84,34 +84,39 @@ body {
   background-color: #f4f7f4;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2.4rem; }
-  .products__title {
-    align-items: center;
-    color: black;
-    display: flex;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.8rem;
-    height: 3.2rem;
-    line-height: 2.4rem;
-    letter-spacing: 0.0025em;
-    margin-bottom: 1.6rem;
-    margin-left: 1.6rem;
-    text-transform: uppercase;
-    width: 24.7rem; }
-  .products__options {
-    display: flex;
-    justify-content: space-between; }
-    .products__options__item {
+  margin-bottom: 2.4rem;
+  padding-top: 3rem; }
+  .products__carousel {
+    overflow: hidden;
+    padding: 1.6rem; }
+    .products__carousel__name {
+      color: black;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.8rem;
+      height: 3.2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.0025em;
+      margin-bottom: 1.6rem;
+      text-transform: uppercase; }
+    .products__carousel__options {
+      display: flex;
+      justify-content: flex-start;
       margin-bottom: 1.2rem;
-      text-transform: capitalize; }
-  .products__carousel-bar {
-    border: 1px solid #C7C0C2;
-    margin-bottom: 2.4rem; }
+      min-width: 50rem; }
+      .products__carousel__options__item {
+        text-transform: capitalize; }
+        .products__carousel__options__item:not(:last-child) {
+          margin-right: 4rem; }
+    .products__carousel__scrollbar {
+      border: 1px solid #C7C0C2;
+      min-width: 50rem; }
   .products__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+    padding: 0.4rem; }
 
 .info {
   align-items: center;
@@ -242,26 +247,15 @@ body {
       margin-left: 16rem; }
   .shop {
     display: none; }
-  .products {
-    align-items: center;
-    width: 100%; }
-    .products__title {
-      align-self: flex-start;
-      margin-left: 15rem;
-      margin-top: 7.2rem;
-      margin-bottom: 2.4rem; }
-    .products__options {
-      align-self: flex-start;
-      justify-content: flex-start;
-      margin-left: 15rem; }
-      .products__options__item {
-        margin-right: 8rem; }
-    .products__carousel-bar {
-      width: 80%; }
-    .products__list {
-      width: 85%; }
+  .products__carousel {
+    padding: 3rem 14rem 0 14rem; }
+    .products__carousel__options__item:not(:last-child) {
+      margin-right: 8rem; }
+  .products__list {
+    padding: 3rem 13rem; }
   .info {
-    flex-direction: row; }
+    flex-direction: row;
+    padding: 0 6rem; }
   .product-types__fruit {
     background: url("../images/blueberry-big.png"), linear-gradient(to bottom, #c4deea, #aecfdb);
     background-repeat: no-repeat;
