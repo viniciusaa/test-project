@@ -82,6 +82,7 @@
   &__carousel {
     overflow: hidden;
     padding: 1.6rem;
+    position: relative;
 
     &__name {
       color: black;
@@ -111,6 +112,14 @@
     }
 
     &__scrollbar {
+      border: 2px solid black;
+      position: absolute;
+      top: 10.1rem;
+      left: 1.5rem;
+      width: 10rem;
+    }
+
+    &__scroll {
       border: 1px solid #C7C0C2;
       min-width: 50rem;
     }
@@ -323,7 +332,10 @@
         }
       }
 
-      &__scrollbar {}
+      &__scrollbar {
+        top: 11.5rem;
+        left: 13.7rem;
+      }
     }
 
     &__list {
