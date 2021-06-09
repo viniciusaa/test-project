@@ -18,5 +18,8 @@
   "homepage": "https://github.com/viniciusaa/test-project#readme",
   "devDependencies": {
     "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "tiny-slider": "^2.9.3"
   }
 }

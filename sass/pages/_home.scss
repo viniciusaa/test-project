@@ -1,5 +1,5 @@
 .deliver {
-  background-color: #2E282A;
+  background-color: #2e282a;
   display: none;
   height: 3.2rem;
   justify-content: center;
@@ -13,25 +13,47 @@
     height: 1.6rem;
     line-height: 1.6rem;
     margin: 0.867rem;
-    width: 28.0rem;
+    width: 28rem;
   }
 }
 
-.main {
-  background: url("../images/apples.png"), linear-gradient(to right, #eacdc4, #ecb093);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  display: flex;
-  flex-direction: column;
+.tns-nav {
+  display: none;
+}
+
+.hero {
   height: 16rem;
-  justify-content: space-around;
+
+  &__broccoli {
+    background: url("../images/broccoli.png"), linear-gradient(to right, #bdde8a, #a5ca77);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+
+  &__apples {
+    background: url("../images/apples.png"), linear-gradient(to right, #eacdc4, #ecae91);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+
+  &__tomatoes {
+    background: url("../images/tomatoes.png"), linear-gradient(to right, #fec1c0, #ff7875);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
 
   &__text-container {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: space-around;
     margin-left: 1.5rem;
 
     &--1 {
-      margin-bottom: 1rem;
+      margin-top: 1.5rem;
       width: 69%;
 
       &__title {
@@ -120,7 +142,7 @@
     }
 
     &__scroll {
-      border: 1px solid #C7C0C2;
+      border: 1px solid #c7c0c2;
       min-width: 50rem;
     }
   }
@@ -167,7 +189,7 @@
       }
 
       &__about {
-        color: #2E282A;
+        color: #2e282a;
         font-weight: bold;
         font-size: 18px;
         line-height: 24px;
@@ -199,7 +221,7 @@
       }
 
       &__about {
-        color: #2E282A;
+        color: #2e282a;
         font-weight: bold;
         font-size: 18px;
         line-height: 24px;
@@ -231,7 +253,7 @@
       }
 
       &__about {
-        color: #2E282A;
+        color: #2e282a;
         font-weight: bold;
         font-size: 18px;
         line-height: 24px;
@@ -258,7 +280,7 @@
   }
 
   &__text {
-    color: #2E282A;
+    color: #2e282a;
     font-size: 1.8rem;
     line-height: 2.5rem;
     margin-top: 3.2rem;
@@ -278,15 +300,71 @@
     display: flex;
   }
 
-  .main {
+  .tns {
+    &-outer {
+      position: relative;
+    }
+
+    &-nav {
+      display: inline-block;
+      height: 28px;
+      left: 50%;
+      margin-left: -25px;
+      margin-top: -14px;
+      position: absolute;
+      top: 95%;
+      width: 50px;
+
+      & button {
+        border: none;
+        border-radius: 50%;
+        height: 5px;
+        opacity: 0.5;
+        width: 5px;
+
+        &:not(:last-child) {
+          margin-right: 0.8rem;
+        }
+
+        &.tns-nav-active {
+          height: 8px;
+          opacity: 1;
+          width: 8px;
+        }
+      }
+    }
+  }
+
+  .hero {
     height: 56rem;
-    background: url("../images/apples-big.png"), linear-gradient(to right, #eacdc4, #ecb093);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
+
+    &__broccoli {
+      background: url("../images/broccoli-big.png"), linear-gradient(to right, #bdde8a, #a5ca77);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
+
+    &__apples {
+      background: url("../images/apples-big.png"), linear-gradient(to right, #eacdc4, #ecae91);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
+
+    &__tomatoes {
+      background: url("../images/tomatoes-big.png"), linear-gradient(to right, #fec1c0, #ff7875);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
 
     &__text-container {
+      height: fit-content;
+      justify-content: flex-start;
+      margin-bottom: 17rem;
       margin-left: 16rem;
+      margin-top: 5rem;
 
       &--1 {
         margin-bottom: 2.4rem;
@@ -320,11 +398,7 @@
     &__carousel {
       padding: 3rem 14rem 0 14rem;
 
-      &__name {}
-
       &__options {
-
-
         &__item {
           &:not(:last-child) {
             margin-right: 8rem;
