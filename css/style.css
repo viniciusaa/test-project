@@ -116,20 +116,10 @@ body {
       margin-bottom: 1.6rem;
       text-transform: uppercase; }
     .products__carousel__options {
-      display: flex;
-      justify-content: flex-start;
-      margin-bottom: 1.2rem;
-      min-width: 50rem; }
+      margin-bottom: 1.2rem; }
       .products__carousel__options__item {
-        text-transform: capitalize; }
-        .products__carousel__options__item:not(:last-child) {
-          margin-right: 4rem; }
-    .products__carousel__scrollbar {
-      border: 2px solid black;
-      position: absolute;
-      top: 10.1rem;
-      left: 1.5rem;
-      width: 10rem; }
+        text-transform: capitalize;
+        text-align: center; }
     .products__carousel__scroll {
       border: 1px solid #c7c0c2;
       min-width: 50rem; }
@@ -309,11 +299,18 @@ body {
     display: none; }
   .products__carousel {
     padding: 3rem 14rem 0 14rem; }
-    .products__carousel__options__item:not(:last-child) {
-      margin-right: 8rem; }
+    .products__carousel__options {
+      display: flex;
+      justify-content: flex-start; }
+      .products__carousel__options__item:not(:last-child) {
+        margin-right: 10rem; }
     .products__carousel__scrollbar {
+      border: 2px solid black;
+      background-color: black;
+      position: absolute;
       top: 11.5rem;
-      left: 13.7rem; }
+      left: 13.7rem;
+      width: 10rem; }
   .products__list {
     padding: 3rem 11.5rem; }
   .info {
@@ -327,12 +324,12 @@ body {
     max-width: none;
     width: 100%; }
     .product-types__fruit__description__name {
-      margin-left: 71rem;
+      margin-left: 65rem;
       margin-top: 14.4rem;
       text-align: left; }
     .product-types__fruit__description__about {
       width: 33%;
-      margin-left: 71rem;
+      margin-left: 65rem;
       text-align: left; }
   .product-types__vegetables {
     background: url("../images/pea-big.png"), linear-gradient(to bottom, #f8fce4, #e2ebcf);
@@ -357,12 +354,12 @@ body {
     max-width: none;
     width: 100%; }
     .product-types__dairy__description__name {
-      margin-left: 71rem;
+      margin-left: 65rem;
       margin-top: 14.4rem;
       text-align: left; }
     .product-types__dairy__description__about {
       width: 33%;
-      margin-left: 71rem;
+      margin-left: 65rem;
       text-align: left; }
   .about {
     align-items: flex-start; }
