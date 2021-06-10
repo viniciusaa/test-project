@@ -95,15 +95,15 @@
       <p class="products__carousel__name">Our products</p>
 
       <div class="products__carousel__options">
-        <p class="products__carousel__options__item"><b>All products</b></p>
+        <p class="products__carousel__options__item">All products</p>
         <p class="products__carousel__options__item">Fruits</p>
         <p class="products__carousel__options__item">Vegetables</p>
         <p class="products__carousel__options__item">Dairy</p>
         <p class="products__carousel__options__item">Meat</p>
       </div>
-
-      <div class="products__carousel__scrollbar"></div>
+      
       <div class="products__carousel__scroll"></div>
+      <div class="products__carousel__scrollbar"></div>
     </div>
 
     <div class="products__list">
@@ -299,13 +299,29 @@
   <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
 
   <script type="module">
-    tns({
+    var heroes = tns({
       container: '.main',
       controls: false,
       items: 1,
       navPosition: 'bottom',
       speed: 1000,
       startIndex: 1
+    });
+
+    var products = tns({
+      container: '.products__carousel__options',
+      controls: false,
+      fixedWidth: 160,
+      items: 3,
+      speed: 500,
+      rewind: false,
+      loop: false,
+      nav: false,
+      responsive: {
+        992: {
+          disable: true
+        }
+      }
     });
   </script>
 </body>
