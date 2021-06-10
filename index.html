@@ -7,6 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Test Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+  <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
 </head>
 
 <body>
@@ -33,18 +35,52 @@
   </header>
 
   <section class="main">
-    <div class="main__text-container">
-      <div class="main__text-container--1">
-        <h1 class="main__text-container--1__title">Food from farms, not factories </h1>
+    <div class="hero hero__broccoli">
+      <div class="hero__text-container">
+        <div class="hero__text-container--1">
+          <h1 class="hero__text-container--1__title">Food from farms, not factories </h1>
+        </div>
+        <div class="hero__text-container--2">
+          <h2 class="hero__text-container--2__subtitle">Locally sourced, organically grown foods from Florida</h2>
+        </div>
       </div>
-      <div class="main__text-container--2">
-        <h2 class="main__text-container--2__subtitle">Locally sourced, organically grown foods from Florida</h2>
+
+      <div class="hero__shop">
+        <button class="shop-button">Shop now</button>
+        <p class="shop-text">No sign up fee | Next day delivery available</p>
       </div>
     </div>
 
-    <div class="main__shop">
-      <button class="shop-button">Shop now</button>
-      <p class="shop-text">No sign up fee | Next day delivery available</p>
+    <div class="hero hero__apples">
+      <div class="hero__text-container">
+        <div class="hero__text-container--1">
+          <h1 class="hero__text-container--1__title">Food from farms, not factories </h1>
+        </div>
+        <div class="hero__text-container--2">
+          <h2 class="hero__text-container--2__subtitle">Locally sourced, organically grown foods from Florida</h2>
+        </div>
+      </div>
+
+      <div class="hero__shop">
+        <button class="shop-button">Shop now</button>
+        <p class="shop-text">No sign up fee | Next day delivery available</p>
+      </div>
+    </div>
+
+    <div class="hero hero__tomatoes">
+      <div class="hero__text-container">
+        <div class="hero__text-container--1">
+          <h1 class="hero__text-container--1__title">Food from farms, not factories </h1>
+        </div>
+        <div class="hero__text-container--2">
+          <h2 class="hero__text-container--2__subtitle">Locally sourced, organically grown foods from Florida</h2>
+        </div>
+      </div>
+
+      <div class="hero__shop">
+        <button class="shop-button">Shop now</button>
+        <p class="shop-text">No sign up fee | Next day delivery available</p>
+      </div>
     </div>
   </section>
 
@@ -258,6 +294,20 @@
     <p class="footer__about-us">About us</p>
     <p class="footer__cart">Your cart</p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+  <script type="module">
+    tns({
+      container: '.main',
+      controls: false,
+      items: 1,
+      navPosition: 'bottom',
+      speed: 1000,
+      startIndex: 1
+    });
+  </script>
 </body>
 
 </html>
