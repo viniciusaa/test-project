@@ -1,0 +1,14 @@
+.info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 6.4rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .info {
+    flex-direction: row;
+    padding: 0 6rem;
+  }
+}

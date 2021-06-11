@@ -1,0 +1,42 @@
+.tns {
+  &-nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .tns {
+    &-outer {
+      position: relative;
+    }
+
+    &-nav {
+      display: inline-block;
+      height: 28px;
+      left: 50%;
+      margin-left: -25px;
+      margin-top: -14px;
+      position: absolute;
+      top: 95%;
+      width: 50px;
+
+      & button {
+        border: none;
+        border-radius: 50%;
+        height: 5px;
+        opacity: 0.5;
+        width: 5px;
+
+        &:not(:last-child) {
+          margin-right: 0.8rem;
+        }
+
+        &.tns-nav-active {
+          height: 8px;
+          opacity: 1;
+          width: 8px;
+        }
+      }
+    }
+  }
+}
