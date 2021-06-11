@@ -1,0 +1,24 @@
+.deliver {
+  background-color: #2e282a;
+  display: none;
+  height: 3.2rem;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    margin: 0.867rem;
+    width: 28rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .deliver {
+    display: flex;
+  }
+}

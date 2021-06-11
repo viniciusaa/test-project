@@ -1,0 +1,79 @@
+.products {
+  background-color: #f4f7f4;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+  padding-top: 3rem;
+
+  &__carousel {
+    overflow: hidden;
+    padding: 1.6rem;
+    position: relative;
+
+    &__name {
+      color: black;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.8rem;
+      height: 3.2rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.0025em;
+      margin-bottom: 1.6rem;
+      text-transform: uppercase;
+    }
+
+    &__options {
+      margin-bottom: 1.2rem;
+
+      &__item {
+        text-transform: capitalize;
+        text-align: center;
+      }
+    }
+
+    &__scroll {
+      border: 1px solid #c7c0c2;
+      min-width: 50rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+    padding: 0.4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .products {
+    &__carousel {
+      padding: 3rem 14rem 0 14rem;
+
+      &__options {
+        display: flex;
+        justify-content: flex-start;
+
+        &__item {
+          &:not(:last-child) {
+            margin-right: 10rem;
+          }
+        }
+      }
+
+      &__scrollbar {
+        border: 2px solid black;
+        background-color: black;
+        position: absolute;
+        top: 11.5rem;
+        left: 13.7rem;
+        width: 10rem;
+      }
+    }
+
+    &__list {
+      padding: 3rem 11.5rem;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.hero {
+  height: 16rem;
+
+  &__broccoli {
+    background: url("../images/broccoli.png"), linear-gradient(to right, #bdde8a, #a5ca77);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+
+  &__apples {
+    background: url("../images/apples.png"), linear-gradient(to right, #eacdc4, #ecae91);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+
+  &__tomatoes {
+    background: url("../images/tomatoes.png"), linear-gradient(to right, #fec1c0, #ff7875);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: space-around;
+    margin-left: 1.5rem;
+
+    &--1 {
+      margin-top: 1.5rem;
+      width: 69%;
+
+      &__title {
+        color: #000000;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 120%;
+        text-transform: capitalize;
+      }
+    }
+
+    &--2 {
+      width: 66%;
+
+      &__subtitle {
+        color: #2e282a;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.0025em;
+      }
+    }
+  }
+
+  &__shop {
+    display: none;
+    margin-left: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hero {
+    height: 56rem;
+
+    &__broccoli {
+      background: url("../images/broccoli-big.png"), linear-gradient(to right, #bdde8a, #a5ca77);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
+
+    &__apples {
+      background: url("../images/apples-big.png"), linear-gradient(to right, #eacdc4, #ecae91);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
+
+    &__tomatoes {
+      background: url("../images/tomatoes-big.png"), linear-gradient(to right, #fec1c0, #ff7875);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
+
+    &__text-container {
+      height: fit-content;
+      justify-content: flex-start;
+      margin-bottom: 17rem;
+      margin-left: 16rem;
+      margin-top: 5rem;
+
+      &--1 {
+        margin-bottom: 2.4rem;
+        width: 40%;
+
+        &__title {
+          font-size: 4.8rem;
+        }
+      }
+
+      &--2 {
+        width: 100%;
+
+        &__subtitle {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__shop {
+      display: block;
+      margin-left: 16rem;
+    }
+  }
+}
